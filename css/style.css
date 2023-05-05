@@ -12,7 +12,7 @@
     --negro: black;
     --light-grey-blue: rgba(184,184,185,0.1);
     --blanco: #fff;
-    --cool-grey: #b8b8b9;
+    --cool-grey: rgba(184, 184, 185, 0.2);
     --negro-8: rgba(0, 0, 0, 0.08);
     --gunmental: #54585a;
     --primary-font: 'Rubik', sans-serif;
@@ -43,7 +43,7 @@
 .fort-deb {
     display: flex;
     flex-flow: column wrap; /* Para tablet será row wrap */
-    background-color: rgba(184, 184, 185, 0.2); /* Cambiar variable --cool-grey, le falta opacidad 0.2 */
+    background-color: var(--cool-grey);
     text-align: center;
 }
 
