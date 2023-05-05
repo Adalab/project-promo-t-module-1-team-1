@@ -1,4 +1,11 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 :root {
+    font-size: 62.5%;
     --margin: 15px;
     --brand_color: #099d8d;
     --brandsecundario_color: #14d9c4;
@@ -8,7 +15,10 @@
     --cool-grey: #b8b8b9;
     --negro-8: rgba(0, 0, 0, 0.08);
     --gunmental: #54585a;
+    --primary-font: 'Rubik', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
 }
+*/seccion2 inicio*/
 .inicio {
     background-color: var(--blanco);
     width: 320px;
@@ -27,4 +37,146 @@
 }
 .inicio-texto {  
     text-align: center;
+}
+/* SECTION 3: Fortalezas Debilidades*/
+
+.fort-deb {
+    display: flex;
+    flex-flow: column wrap; /* Para tablet será row wrap */
+    background-color: rgba(184, 184, 185, 0.2); /* Cambiar variable --cool-grey, le falta opacidad 0.2 */
+    text-align: center;
+}
+
+.fortalezas, .debilidades {
+    margin-top: 30px;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+
+.debilidades {
+    margin-bottom: 45px;
+}
+
+.fortalezas__title, .debilidades__title {
+    font-size: 2.2rem;
+    color: var(--brand_color);
+    font-weight: 500;
+    line-height: 2.05;
+}
+
+.fortalezas__content, .debilidades__content {
+    font-size: 1.6rem;
+    color: var(--gunmental);
+    line-height: 1.5;
+}
+
+/* SECTION 4: Quienes somos */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.about-us--title {
+    width: 100%;
+    color:var(--brand_color);
+    font-size: 2.4rem;
+    line-height: 4.5rem;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.about-us--article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us--article img{
+    width: 180px;
+    height:180px ;
+    border-radius:10px;
+    border: 5px solid var(--negro-8)  ;
+
+}
+.about-us--info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us--name {
+    margin-top:15px;
+    color:var(--negro);
+    font-size: 2.0rem;
+    line-height: 4.5rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.about-us--description {
+    width: 290px;
+    height: 200px;
+    font-family: 'Open Sans', sans-serif;
+    color:var(--gunmental);
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.about-us--rrss {
+    width: 124px;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+
+/* TABLET */
+@media screen and (min-width : 768px) {
+.about-us--article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 67px;
+} 
+
+.about-us--info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 205px;
+    height: 205px;
+    margin-left: 31px;
+}
+
+.about-us--description {
+    text-align: left;
+    width: 443px;
+    height: 122px;
+}
+
+.about-us--article img{
+    width: 205px;
+    height:205px ;
+    border-radius:10px;
+    border: 5px solid var(--negro-8)  ;
+    
+}
+.about-us__right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+
+} 
+.about-us__article--info{
+    margin-right: 281px; 
+    display: flex;
+    flex-direction: c;
+}
+
 }
