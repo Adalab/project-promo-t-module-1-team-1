@@ -9,3 +9,22 @@
     --negro-8: rgba(0, 0, 0, 0.08);
     --gunmental: #54585a;
 }
+.inicio {
+    background-color: var(--blanco);
+    width: 320px;
+    height: 504px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.titulo-inicio {
+    color: var(--brandsecundario_color);
+    text-align: center;
+    margin: 10px;
+    margin: 15px 0 0;
+    line-height: 1.5;  
+}
+.inicio-texto {  
+    text-align: center;
+}
