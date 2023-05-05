@@ -85,7 +85,7 @@
     color:var(--brand_color);
     font-size: 2.4rem;
     line-height: 4.5rem;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--primary-font);
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -114,13 +114,13 @@
     color:var(--negro);
     font-size: 2.0rem;
     line-height: 4.5rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--secondary-font);
     text-align: center;
 }
 .about-us--description {
     width: 290px;
     height: 200px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--secondary-font);
     color:var(--gunmental);
     line-height: 2.4rem;
     font-size: 1.6rem;
