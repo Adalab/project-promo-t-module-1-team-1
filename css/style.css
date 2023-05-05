@@ -43,8 +43,16 @@
 .fort-deb {
     display: flex;
     flex-flow: column wrap; /* Para tablet será row wrap */
+    align-items: center;
     background-color: var(--cool-grey);
     text-align: center;
+}
+
+.fort-deb__triangle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--blanco);
+    transform: translateY(-15px) rotate(45deg);
 }
 
 .fortalezas, .debilidades {
