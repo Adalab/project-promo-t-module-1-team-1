@@ -53,7 +53,55 @@
     font-size: 15px;
 }
 
-*/seccion2 inicio*/ .inicio {
+/*HERO*/
+
+.hero{
+    width: 100%;
+    position: relative;
+    display: inline;
+    text-align: center;
+
+   }
+
+.hero-content{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../imagenes/titanic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+    
+
+.Lorem-ipsum {
+    width: 260px;
+    height: 80px;
+    font-family: OpenSans;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    color: var(--negro);
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+*/seccion2 inicio*/
+.inicio {
     background-color: var(--blanco);
     width: 320px;
     height: 504px;
