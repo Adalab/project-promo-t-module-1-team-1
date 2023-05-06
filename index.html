@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Trabajo grupal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/style.css"
+    />
+    <!-- Línea de script es para que funcione el fontawesome no borrar-->
+    <script
+      src="https://kit.fontawesome.com/960132646f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500;600&display=swap" rel="stylesheet">
     <script src="main.js"></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1 class="titulo">NOMBRE DEL GRUPO</h1>
+      <nav class="navegacion">
+        <ul class="lista_superior">
+          <li>EQUIPO</li>
+          <li>QUIENES SOMOS</li>
+          <li>CONTACTO</li>
+        </ul>
+      </nav>
+    </header>
     <main>
         <section class="hero"> 
         <div class="hero-content">
@@ -17,17 +39,156 @@
         </div>
 
       </section>
-      
+      <section class="inicio">
+        <h2 class="titulo-inicio">EQUIPO</h2>
+          <div class="inicio-texto">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+          </div>
+        
+      </section>
+      <section class="fort-deb"> <!-- MARIA -->
+        <div class="fortalezas">
+          <h3 class="fortalezas__title">Fortalezas</h3>
+          <p class="fortalezas__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, pariatur a ea alias autem adipisci quaerat praesentium nemo. At tempora voluptatem tenetur repellendus nesciunt aut quidem laboriosam vel culpa quo.</p>
+        </div>
+        <div class="debilidades">
+          <h3 class="debilidades__title">Debilidades</h3>
+          <p class="debilidades__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati beatae nam sapiente esse quibusdam unde earum quis voluptatum recusandae ab repudiandae pariatur ullam labore, inventore accusamus in eum ipsa. Sint.</p>
+        </div>
         
       </section>
       <section>
-        
-      </section>
-      <section>
-        
+      <section class="about-us">
+        <h2 class="about-us--title">QUIÉNES SOMOS</h2>
+        <article class="about-us--article">
+          <img src="./imagenes/titanic.png" alt="imagen perfil 1" />
+          <div class="about-us--info">
+          <p class="about-us--name">Nombre 0</p>
+          <p class="about-us--description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            quasi exercitationem commodi earum veniam veritatis repellendus ad
+            vitae, cupiditate velit inventore voluptates expedita quibusdam
+            vitae, cupiditate velit inventore voluptates expedita quibusdam
+            iure.
+          </p>
+          <div class="about-us--rrss">
+            <i class="fa-brands fa-twitter" style="color: #099d8d"></i>
+            <span>·</span>
+            <i class="fa-brands fa-linkedin-in" style="color: #099d8d"></i>
+            <span>·</span>
+            <i class="fa-brands fa-github-alt" style="color: #099d8d"></i>
+            <span>·</span>
+            <i class="fa-solid fa-envelope" style="color: #099d8d"></i>
+          </div>
+          </div>
+        </article>
+        <article class="about-us--article about-us__right">
+          <img src="./imagenes/titanic.png" alt="imagen perfil 2" />
+          <div class="about-us--info about-us__right--info">
+            <p class="about-us--name about-us__right--name">Nombre 1</p>
+            <p class="about-us--description about-us__right--description" >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quasi exercitationem commodi earum veniam veritatis repellendus ad
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              iure.
+            </p>
+            <div class="about-us--rrss">
+              <i class="fa-brands fa-twitter" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-linkedin-in" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-github-alt" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-solid fa-envelope" style="color: #099d8d"></i>
+            </div>
+          </div>
+        </article>
+        <article class="about-us--article">
+          <img src="./imagenes/titanic.png" alt="imagen perfil 3" />
+          <div class="about-us--info">
+            <p class="about-us--name">Nombre 2</p>
+            <p class="about-us--description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quasi exercitationem commodi earum veniam veritatis repellendus ad
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              iure.
+            </p>
+            <div class="about-us--rrss">
+              <i class="fa-brands fa-twitter" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-linkedin-in" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-github-alt" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-solid fa-envelope" style="color: #099d8d"></i>
+            </div>
+          </div>
+        </article>
+        <article class="about-us--article about-us__article--right">
+          <img src="./imagenes/titanic.png" alt="imagen perfil 4" />
+          <div class="about-us--info about-us--right">
+            <p class="about-us--name about-us--right">Nombre 3</p>
+            <p class="about-us--description about-us--right">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quasi exercitationem commodi earum veniam veritatis repellendus ad
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              iure.
+            </p>
+            <div class="about-us--rrss">
+              <i class="fa-brands fa-twitter" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-linkedin-in" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-github-alt" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-solid fa-envelope" style="color: #099d8d"></i>
+            </div>
+          </div>
+        </article>
+        <article class="about-us--article">
+          <img src="./imagenes/titanic.png" alt="imagen perfil 5" />
+          <div class="about-us--info">
+            <p class="about-us--name">Nombre 4</p>
+            <p class="about-us--description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quasi exercitationem commodi earum veniam veritatis repellendus ad
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              vitae, cupiditate velit inventore voluptates expedita quibusdam
+              iure.
+            </p>
+            <div class="about-us--rrss">
+              <i class="fa-brands fa-twitter" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-linkedin-in" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-brands fa-github-alt" style="color: #099d8d"></i>
+              <span>·</span>
+              <i class="fa-solid fa-envelope" style="color: #099d8d"></i>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <span class="nombre_grupo"
+        >Nombre del grupo 2023</span
+      >
+      <nav class="navegacion_inferior">
+        <ul class="lista_inferior">
+          <li>EQUIPO</li>
+          <li>QUIÉNES SOMOS</li>
+          <li>CONTACTO</li>
+        </ul>
+        <img
+          src="./imagenes/logo-adalab.png"
+          alt="logo adalab"
+          class="imange_logo"
+        />
+      </nav>
+    </footer>
   </body>
 </html>
-
