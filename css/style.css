@@ -212,17 +212,10 @@
 }
 
 .about-us--description {
-<<<<<<< HEAD
-    width: 290px;
-    height: 200px;
-    font-family: 'Open Sans', sans-serif;
-    color: var(--gunmental);
-=======
     /* width: 290px;
     height: 200px; */
     font-family: var(--secondary-font);
     color:var(--gunmental);
->>>>>>> about-us-tablet
     line-height: 2.4rem;
     font-size: 1.6rem;
     text-align: center;
@@ -241,14 +234,7 @@
 
 /* TABLET */
 @media screen and (min-width : 768px) {
-<<<<<<< HEAD
-    .about-us--article {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 67px;
-    }
-=======
+
 .about-us--article{
     display: flex;
     flex-direction: row;
@@ -256,8 +242,7 @@
     margin-bottom: 67px;
     margin-left: 45px;
     margin-right: 45px;
-} 
->>>>>>> about-us-tablet
+    }
 
     .about-us--info {
         display: flex;
@@ -427,6 +412,43 @@
     margin-bottom: 45px;
 }
 
+/*FOOTER*/
+.footer {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: var(--cool-grey);
+    position: absolute;
+    bottom: -50px;
+}
+
+.nombre_grupo {
+    color: #b8b8b9;
+    font-size: 15px;
+    margin: 30px 74px;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+
+.lista_inferior {
+    color: var(--gunmental);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--primary-font);
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.image_logo {
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
 
 /* TABLET */
 @media screen and (min-width : 768px) {
@@ -473,48 +495,10 @@
         display: flex;
         flex-direction: c;
     }
-}
 
-/*FOOTER*/
-.footer {
-    width: 100%;
-    background-color: #fff;
-    border: 1px solid;
-    border-color: var(--cool-grey);
-    position: absolute;
-    bottom: -50px;
-}
-
-.nombre_grupo {
-    color: #b8b8b9;
-    font-size: 15px;
-    margin: 30px 74px;
-    font-weight: 500;
-    font-family: var(--secondary-font);
-}
-
-.lista_inferior {
-    color: var(--gunmental);
-    font-size: 14px;
-    text-align: center;
-    margin-top: 20px;
-    font-family: var(--primary-font);
-}
-
-li {
-    margin-bottom: 4px;
-}
-
-.image_logo {
-    height: 45px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 45px;
-}
-    align-items: flex-start;
+/* align-items: flex-start;
     margin-left: 31px;
-}
+} */
 
 .about-us--description {
     text-align: left;
