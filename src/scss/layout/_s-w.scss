@@ -1,47 +1,90 @@
-/* SECTION 3: Fortalezas Debilidades*/
+/* STRENGTHS & WEAKNESSES */
 
-.fort-deb {
-    /*display: flex;*/
-    flex-flow: column wrap;
-    /* Para tablet será row wrap */
-    align-items: center;
-    background-color: var(--cool-grey);
+.s-w {
+    background-color: $cool-grey;
     text-align: center;
+
+    &__triangle {
+        width: 30px;
+        height: 30px;
+        background-color: $blanco;
+        transform: translateY(-15px) rotate(45deg);
+        margin: auto;
+    }
+    &__content {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        @media screen and (min-width:768px) {
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media screen and (min-width:1200px) {
+            padding-left: 123px;
+            padding-right: 123px;
+        }
+    }
 }
 
-.fort-deb__triangle {
-    width: 30px;
-    height: 30px;
-    background-color: var(--blanco);
-    transform: translateY(-15px) rotate(45deg);
-    margin: auto;
+.strengths {
+    padding-top: 15px;
+    padding-left: $margin;
+    padding-right: $margin;
+    padding-bottom: 45px;
+
+    @media screen and (min-width:768px) {
+        width: 50%;
+        padding-top: 15px;
+        }
+    &__title {
+        font-size: 2.2rem;
+        font-family: $primary-font;
+        color: $brand_color;
+        font-weight: 500;
+
+        @media screen and (min-width:768px) {
+            padding-bottom: 25px;
+        }
+    }
+
+    &__content {
+        font-size: 1.6rem;
+        font-family: $secondary-font;
+        color: $gunmental;
+        line-height: 1.5;
+    }
 }
 
-.fortalezas,
-.debilidades {
-    margin-top: 0px;
-    margin-left: var(--margin);
-    margin-right: var(--margin);
-}
+.weaknesses {
+    padding-top: 15px;
+    padding-left: $margin;
+    padding-right: $margin;
+    padding-bottom: 45px;
 
+    @media screen and (min-width:768px) {
+        width: 50%;
+        padding-top: 15px;
+        }
 
-.debilidades {
-    margin-bottom: 45px;
-}
+    &__title {
+        font-size: 2.2rem;
+        font-family: $primary-font;
+        color: $brand_color;
+        font-weight: 500;
 
-.fortalezas__title,
-.debilidades__title {
-    font-size: 2.2rem;
-    font-family: var(--primary-font);
-    color: var(--brand_color);
-    font-weight: 500;
-    line-height: 2.05;
-}
+        @media screen and (min-width:768px) {
+            padding-bottom: 25px;
+        }
+    }
 
-.fortalezas__content,
-.debilidades__content {
-    font-size: 1.6rem;
-    font-family: var(--secondary-font);
-    color: var(--gunmental);
-    line-height: 1.5;
+    &__content {
+        font-size: 1.6rem;
+        font-family: $secondary-font;
+        color: $gunmental;
+        line-height: 1.5;
+    }
 }
