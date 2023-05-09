@@ -1,27 +1,27 @@
 /*FOOTER*/
 .footer {
     width: 100%;
-    background-color: #fff;
+    background-color: $blanco;
     border: 1px solid;
-    border-color: var(--cool-grey);
+    border-color: $cool-grey;
     position: absolute;
     bottom: -50px;
 }
 
-.nombre_grupo {
+.group__name {
     color: #b8b8b9;
     font-size: 15px;
     margin: 30px 74px;
     font-weight: 500;
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
 }
 
-.lista_inferior {
-    color: var(--gunmental);
+.footer__nav {
+    color: $gunmental;
     font-size: 14px;
     text-align: center;
     margin-top: 20px;
-    font-family: var(--primary-font);
+    font-family: $primary-font;
 }
 
 li {
@@ -41,12 +41,12 @@ li {
         height: 170px;
     }
 
-    .nombre_grupo {
+    .group__name {
         margin-bottom: 120px;
 
     }
 
-    .lista_inferior {
+    .footer__nav--list {
         text-align: end;
         margin-right: 70px;
         margin-left: 400px;
@@ -58,5 +58,16 @@ li {
         display: flex;
         align-self: flex-start;
 
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width : 1200px) {
+    .group__name {
+            margin-left: 120px;
+    
+    }    
+    .footer__nav--list {
+        margin-right: 120px;
     }
 }
