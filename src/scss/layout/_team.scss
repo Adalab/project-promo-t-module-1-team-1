@@ -1,0 +1,56 @@
+/*team 2*/
+
+.inicio {
+    background-color: var(--blanco);
+    justify-content: space-between;
+}
+
+.titulo_inicio {
+    color: var(--brand_color);
+    text-align: center;
+    margin: var(--margin);
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    line-height: 1.8;
+    padding-top: 60px;
+
+
+}
+
+.inicio_texto {
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: var(--gunmental);
+    margin: var(--margin);
+    font-size: 1.6rem;
+    font-style: normal;
+    padding-bottom: 15px;
+
+
+}
+
+.texto_equipo {
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+/*seccion2 inicio tablet*/ 
+.inicio {
+    background-color: var(--blanco);
+    width: 320px;
+    height: 504px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-inicio {
+    color: var(--brandsecundario_color);
+    text-align: center;
+    margin: 10px;
+    margin: 15px 0 0;
+    line-height: 1.5;
+}
+
+.inicio-texto {
+    text-align: center;
+}

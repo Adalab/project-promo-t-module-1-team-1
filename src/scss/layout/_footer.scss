@@ -1,0 +1,62 @@
+/*FOOTER*/
+.footer {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: var(--cool-grey);
+    position: absolute;
+    bottom: -50px;
+}
+
+.nombre_grupo {
+    color: #b8b8b9;
+    font-size: 15px;
+    margin: 30px 74px;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+
+.lista_inferior {
+    color: var(--gunmental);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--primary-font);
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.image_logo {
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+/*FOOTER tablet*/
+@media screen and (min-width : 768px) {
+    footer {
+        height: 170px;
+    }
+
+    .nombre_grupo {
+        margin-bottom: 120px;
+
+    }
+
+    .lista_inferior {
+        text-align: end;
+        margin-right: 70px;
+        margin-left: 400px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .image_logo {
+        display: flex;
+        align-self: flex-start;
+
+    }
+}

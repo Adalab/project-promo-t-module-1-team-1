@@ -1,0 +1,47 @@
+/* SECTION 3: Fortalezas Debilidades*/
+
+.fort-deb {
+    /*display: flex;*/
+    flex-flow: column wrap;
+    /* Para tablet será row wrap */
+    align-items: center;
+    background-color: var(--cool-grey);
+    text-align: center;
+}
+
+.fort-deb__triangle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--blanco);
+    transform: translateY(-15px) rotate(45deg);
+    margin: auto;
+}
+
+.fortalezas,
+.debilidades {
+    margin-top: 0px;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+}
+
+
+.debilidades {
+    margin-bottom: 45px;
+}
+
+.fortalezas__title,
+.debilidades__title {
+    font-size: 2.2rem;
+    font-family: var(--primary-font);
+    color: var(--brand_color);
+    font-weight: 500;
+    line-height: 2.05;
+}
+
+.fortalezas__content,
+.debilidades__content {
+    font-size: 1.6rem;
+    font-family: var(--secondary-font);
+    color: var(--gunmental);
+    line-height: 1.5;
+}
