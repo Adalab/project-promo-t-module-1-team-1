@@ -1,56 +1,39 @@
-/*team 2*/
+.team {
+    background-color: $blanco;
+    font-family: $secondary-font;
+    
+    &__title {
+        color: $color-blue-green;
+        text-align: center;
+        padding-top: 45px;
+        font-size: 2.4rem;  
+        line-height: 2.8rem;
+        font-weight: medium;
+          
+    }
+    &__container {
+        color: $gunmental;
+        text-align: center;
+        margin: $margin;
+        font-size: 1.6rem;
+        font-style: normal;
+        padding-bottom: 15px; 
 
-.inicio {
-    background-color: var(--blanco);
-    justify-content: space-between;
-}
+        @media screen and (min-width: 768px) {
+            margin-left: 45px;
+            margin-right: 45px;
+            margin-bottom: 45px;   
+        }
+        @media screen and (min-width : 1200px) {
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-bottom: 60px;
+        }
+        
+        &--para {
+            padding-bottom: 15px;
+        }
 
-.titulo_inicio {
-    color: var(--brand_color);
-    text-align: center;
-    margin: var(--margin);
-    font-family: var(--primary-font);
-    font-size: 2.4rem;
-    line-height: 1.8;
-    padding-top: 60px;
+    }
 
-
-}
-
-.inicio_texto {
-    text-align: center;
-    font-family: var(--secondary-font);
-    color: var(--gunmental);
-    margin: var(--margin);
-    font-size: 1.6rem;
-    font-style: normal;
-    padding-bottom: 15px;
-
-
-}
-
-.texto_equipo {
-    padding-bottom: 10px;
-    line-height: 1.5;
-}
-/*seccion2 inicio tablet*/ 
-.inicio {
-    background-color: var(--blanco);
-    width: 320px;
-    height: 504px;
-    padding: 30px 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo-inicio {
-    color: var(--brandsecundario_color);
-    text-align: center;
-    margin: 10px;
-    margin: 15px 0 0;
-    line-height: 1.5;
-}
-
-.inicio-texto {
-    text-align: center;
 }
