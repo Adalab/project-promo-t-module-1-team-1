@@ -1,6 +1,6 @@
 /* HEADER*/
 .header {
-    background-color: var(--brand_color);
+    background-color: $brand_color;
     height: 70px;
     width: 100vw;
     position: fixed;
@@ -10,60 +10,62 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
+    &__title {
+            color: $blanco;
+            font-size: 1.5rem;
+            font-family: $secondary-font;
+            font-weight: 600;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
 }
 
-.titulo {
-    color: var(--blanco);
-    font-size: 1.5rem;
-    font-family: var(--secondary-font);
-    font-weight: 600;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.navegacion {
-    background-color: var(--brandsecundario_color);
+.nav__list {
+    background-color: $brandsecundario_color;
     font-weight: 600;
     padding-top: 8px;
     padding-bottom: 7px;
+    &--content {
+        list-style: none;
+        color: $blanco;
+        display: flex;
+        justify-content: space-around;
+        font-family: $secondary-font;
+        font-size: 1.5rem;    
+ }
 }
-
-.lista_superior {
-    list-style: none;
-    color: var(--blanco);
-    display: flex;
-    justify-content: space-around;
-    font-family: var(--secondary-font);
-    font-size: 1.5rem;
-}
-
-.lista_superior a {
+.nav__list--content a {
     text-decoration: none;
-    color: var(--blanco);
+    color: $blanco;
 }
 
 /*HEADER TABLET*/
 @media screen and (min-width : 768px) {
     .header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-    .titulo {
-
+    &__title {
         margin-left: 45px;
     }
-
-    .navegacion {
-        background: none;
-
     }
+    .nav__list {
+        background: none;
+        &--content {
+            gap: 20px;
+            margin-right: 45px;
+            }
+    }
+}
 
-    .lista_superior {
-        gap: 10px;
-        margin-right: 45px;
+/*DESKTOP*/
+@media screen and (min-width : 1200px) {
+    .header__title{
+        margin-left: 145px;
+    }
+    .nav__list {
+        margin-right: 120px;
     }
 }
