@@ -46,37 +46,37 @@
         </section>
 
         <section>
-            <form action="/signup">
-                <label for="firstName">Nombre completo</label>
-                <input type="text" 
+            <form class="form" action="https://formspree.io/f/xnqyrjva"method="POST">
+                <label class="form__label firstName" for="firstName">Nombre completo <span class="label__asterisk">*</span> </label>
+                <input class="form__input firstName" type="text" 
                 id="firstName"
                 name="firstName"
                 placeholder="Nombre..."
                 required
                 >
 
-                <label for="email">Email</label>
-                <input type="email" 
+                <label class="form__label email" for="email">Email <span class="label__asterisk">*</span> </label>
+                <input class="form__input email" type="email" 
                 id="email"
                 name="email"
                 value="nombre.apellidos@mail.com"
                 >
 
-                <label for="telephone">Teléfono</label>
-                <input type="telephone" 
+                <label class="form__label telephone" for="telephone">Teléfono</label>
+                <input class="form__input telephone" type="telephone" 
                 id="telephone"
                 name="telephone"
                 placeholder="Ej: 123456789"
                 required
                 >
-                <label for="telephone">Mensaje</label>
-                <input type="telephone" 
-                id="telephone"
-                name="telephone"
+                <label class="form__label message" for="message">Mensaje <span class="label__asterisk">*</span> </label>
+                <input class="form__input message" type="textarea" 
+                id="message"
+                name="message"
                 placeholder="¿Qué necesitas?"
                 required
                 >
-                <input type="submit" name="Enviar info">
+                <input class="form__input submit" type="submit" name="Enviar info" value="Enviar">
                 
         </section>
     <include src="./partials/footer.html"></include>

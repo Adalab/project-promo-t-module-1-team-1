@@ -34,4 +34,42 @@ img {
     }
 }
 
+.form {
+    margin-left: $margin;
+    margin-right: $margin;
+    &__label {
+        display: block;
+        font-family: $secondary-font;
+        color: $gunmental;
+        font-size: 1.4rem;
+    .label__asterisk {
+        color: $brandsecundario_color;
+        }
+    }
+    &__input {
+        height: 45px;
+        display: block;
+        width: 100%;
+        margin-bottom: 13px;
+        margin-top: 7px;
+        border-color: $cool-grey;
+        border-radius: 5px;
+    }
+
+    &__input::placeholder {
+        color: $cool-grey;
+    }
+}
+
+.submit {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-family: $secondary-font;
+    font-weight: 600;
+    color: $blanco;
+    background-color: $brand_color;
+    border: none;
+    border-radius: 5px;
+}
+
 
