@@ -1,0 +1,35 @@
+img {
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        color: $color-blue-green;
+        font-family: $primary-font;
+        text-align: center;
+        margin: 30px;
+        font-size: 3rem;  
+        line-height: 1.5rem;
+        font-weight: medium;
+    }
+    &__text {
+        font-family: $secondary-font;
+        color: $gunmental;
+        text-align: center;
+        margin: $margin;
+        font-size: 1.6rem;
+        font-style: normal;
+        padding-bottom: 15px; 
+    }
+    &__small {
+        text-align: center;
+        font-family: $secondary-font;
+        font-size: 1rem;
+        padding-bottom: 50px; 
+
+    }
+}
