@@ -32,8 +32,21 @@ img {
         padding-bottom: 50px; 
 
     }
+    .label__asterisk {
+        color: $brandsecundario_color;
+    }
+
+    @media all and (min-width: 768px) {
+        width: 58%;
+        margin: auto;
+    }
+
+    @media all and (min-width: 1200px) {
+        width: 50%;
+    }
 }
 
+/* Estilos Formulario*/
 .form {
     margin-left: $margin;
     margin-right: $margin;
@@ -58,6 +71,15 @@ img {
 
     &__input::placeholder {
         color: $cool-grey;
+    }
+
+    @media all and (min-width: 768px) {
+        width: 58%;
+        margin: auto;
+    }
+
+    @media all and (min-width: 1200px) {
+        width: 50%;
     }
 }
 
