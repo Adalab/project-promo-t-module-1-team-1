@@ -87,22 +87,24 @@ img {
 
     &__input:focus::placeholder {
         color: transparent;
-        margin: 0;
+
     }
 
     @media all and (min-width: 768px) {
         width: 58%;
         margin: auto;
     }
-
     @media all and (min-width: 1200px) {
         width: 50%;
-        &__input .email, .telephone {
-            display: inline-flex;
+
+        .email {
+            display: inline;
         }
 
     }
 }
+
+
 
 .submit {
     text-transform: uppercase;

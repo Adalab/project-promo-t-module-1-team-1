@@ -1,19 +1,23 @@
 /*FOOTER*/
-/*.footer {
-    width: 100%;
-    background-color: $blanco;
-    border: 1px solid;
-    border-color: $cool-grey;
-    position: absolute;
-    bottom: -50px;
-}*/
 
 .group__name {
+    display: block;
     color: #b8b8b9;
     font-size: 15px;
+    text-align: center;
     margin: 30px 74px;
     font-weight: 500;
     font-family: $secondary-font;
+    @media all and (min-width: 768px) {
+        margin-left: 55px;
+        margin-top: 45px;
+        margin-bottom: 0px;
+        margin-right: 74px;
+        text-align: left;
+    }
+    @media all and (min-width: 1200px) {
+        margin-left: 145px;
+    }
 }
 
 .footer__nav {
@@ -22,6 +26,16 @@
     text-align: center;
     margin-top: 20px;
     font-family: $primary-font;
+    &--list {
+        @media all and (min-width:768px) {
+                margin-top: 45px;
+                margin-right: 30px;
+            }
+        li a {
+            text-decoration: none;
+            color: $gunmental;
+        }
+    }
 }
 
 li {
@@ -29,7 +43,7 @@ li {
 }
 
 .image_logo {
-    height: 45px;
+    width: 116px;
     display: block;
     margin: 0 auto;
     margin-top: 30px;
@@ -57,7 +71,6 @@ li {
         list-style: none;
         display: flex;
         flex-direction: column;
-        margin: 30px;
         /*grid-column: 2/3;*/
         /*margin-right: 70px;
         margin-left: 400px;*/
@@ -67,17 +80,20 @@ li {
         /*display: flex;
         align-self: flex-start;*/
         margin-top: 0;
-        margin-left: 60px; 
+        margin-left: 45px; 
+
     }
 }
 
 /*DESKTOP*/
-@media screen and (min-width : 1200px) {
-    .group__name {
-            margin-left: 120px;
-    
-    }    
+@media screen and (min-width : 1200px) {   
     .footer__nav--list {
         margin-right: 120px;
     }
+    .image_logo {
+        margin-top: 0;
+        margin-left: 138px;
+
+    }
+
 }
