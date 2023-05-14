@@ -70,7 +70,24 @@ img {
     }
 
     &__input::placeholder {
-        color: $cool-grey;
+        color: $cool-grey-full-opacity;
+        opacity: 100%;
+        padding-left: $margin;
+        font-size: 1.4rem;
+    }
+
+    &__input[value="nombre.apellidos@mail.com"] {
+        color: $gunmental;
+        padding-left: $margin;
+    }
+
+    &__input:focus {
+        padding-left: $margin;
+    }
+
+    &__input:focus::placeholder {
+        color: transparent;
+        margin: 0;
     }
 
     @media all and (min-width: 768px) {
@@ -80,6 +97,10 @@ img {
 
     @media all and (min-width: 1200px) {
         width: 50%;
+        &__input .email, .telephone {
+            display: inline-flex;
+        }
+
     }
 }
 
