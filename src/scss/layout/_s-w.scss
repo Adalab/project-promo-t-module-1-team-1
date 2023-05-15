@@ -1,7 +1,7 @@
 /* STRENGTHS and WEAKNESSES */
 
 .s-w {
-    background-color: $cool-grey;
+    background-color: #FDEEDC;
     text-align: center;
 
     &__triangle {
@@ -44,7 +44,7 @@
     &__title {
         font-size: 2.2rem;
         font-family: $primary-font;
-        color: $brand_color;
+        color: $color-title;
         font-weight: 500;
 
         @media screen and (min-width:768px) {
@@ -74,7 +74,7 @@
     &__title {
         font-size: 2.2rem;
         font-family: $primary-font;
-        color: $brand_color;
+        color: $color-title;
         font-weight: 500;
 
         @media screen and (min-width:768px) {

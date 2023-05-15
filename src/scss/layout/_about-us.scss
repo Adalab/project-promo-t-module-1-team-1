@@ -12,7 +12,7 @@
     font-size: 2.4rem;
     line-height: 4.5rem;
     font-family: $primary-font;
-    color: $brand_color;
+    color: $color-title;
   }
 }
 
@@ -26,7 +26,8 @@
   width: 180px;
   height: 180px;
   border-radius: 10px;
-  border: 5px solid $negro-8;
+  border: 5px solid #FFD8A9;
+  object-fit: cover;
 }
 
 .about-us {
@@ -37,7 +38,7 @@
   }
   &__name {
     margin-top: $margin;
-    color: $negro;
+    color: $lapis;
     font-size: 2rem;
     line-height: 4.5rem;
     font-family: $secondary-font;
@@ -62,6 +63,7 @@
   margin-bottom: 45px;
   .fa-brands, .fa-solid {
     font-size: 1.6rem;
+    color: $lapis;
   }
 }
 

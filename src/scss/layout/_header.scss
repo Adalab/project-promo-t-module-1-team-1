@@ -18,7 +18,11 @@
             text-align: center;
             padding-top: 15px;
             padding-bottom: 15px;
+            text-transform: uppercase;
         }
+    &__link {
+        text-decoration: none;
+    }
 }
 
 .nav__list {
