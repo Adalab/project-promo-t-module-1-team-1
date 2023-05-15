@@ -51,7 +51,6 @@ img {
     margin-left: $margin;
     margin-right: $margin;
     &__label {
-        display: block;
         font-family: $secondary-font;
         color: $gunmental;
         font-size: 1.4rem;
@@ -60,13 +59,14 @@ img {
         }
     }
     &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         height: 45px;
-        display: block;
         width: 100%;
         margin-bottom: 13px;
         margin-top: 7px;
-        border-color: $cool-grey;
-        border-radius: 5px;
+        border: 1px solid $cool-grey-full-opacity;
     }
 
     &__input::placeholder {
@@ -87,7 +87,17 @@ img {
 
     &__input:focus::placeholder {
         color: transparent;
+    }
 
+    .message {
+        font-family: $secondary-font;
+        height: 100%;
+        &::placeholder {
+            padding-top: 10px;
+        }
+        &:focus {
+            padding-top: 10px;
+        }
     }
 
     @media all and (min-width: 768px) {
@@ -97,14 +107,42 @@ img {
     @media all and (min-width: 1200px) {
         width: 50%;
 
-        .email {
-            display: inline;
+        // &__input .email {
+        //     display: inline-flex;
+        //     width: 60%;
+        // }
+
+        // &__input .telephone {
+        //     display: inline-flex;
+        //     width: 35%;
+        // }
+        &__flex {
+            display: flex;
+            justify-content: space-between;
         }
+
+        &__flex .label__email {
+            width: 67%;
+        }
+
+        &__flex .label__telephone {
+            width: 27%;
+        }
+
+        /* &__label .email {
+            display: inline-flex;
+            flex-direction: column;
+            width: 45%;
+        }
+
+        &__label .telephone {
+            display: inline-flex;
+            flex-direction: column;
+            width: 35%;
+        } */
 
     }
 }
-
-
 
 .submit {
     text-transform: uppercase;

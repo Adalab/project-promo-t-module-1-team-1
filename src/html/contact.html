@@ -41,7 +41,7 @@
         <img src="./assets/images/titanic.png" alt="">
         <section class="contact">
             <h1 class="contact__title">CONTACTO</h1>
-            <P class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum ullamcorper mauris, vel convallis metus eleifend in.</P>
+            <P class="contact__text">Si tienes interés en contactar con alguna de nosotras, rellena el siguiente formulario y te contestaremos lo antes posible. Muchas gracias.</P>
             <small class="contact__small">Todos los campos marcados con <span class="label__asterisk">*</span> son obligatorios.</small>
         </section>
 
@@ -54,28 +54,27 @@
                 placeholder="Nombre..."
                 required
                 >
-
-                <label class="form__label email" for="email">Email <span class="label__asterisk">*</span> </label>
-                <input class="form__input email" type="email" 
-                id="email"
-                name="email"
-                value="nombre.apellidos@mail.com"
-                >
-
-                <label class="form__label telephone" for="telephone">Teléfono</label>
-                <input class="form__input telephone" type="telephone" 
-                id="telephone"
-                name="telephone"
-                placeholder="Ej: 123456789"
-                required
-                >
+                <div class="form__flex">
+                  <label class="form__label label__email" for="email">Email <span class="label__asterisk">*</span>
+                  <input class="form__input email" type="email"
+                  id="email"
+                  name="email"
+                  value="nombre.apellidos@mail.com" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  ></label>
+                  <label class="form__label label__telephone" for="telephone">Teléfono
+                  <input class="form__input telephone" type="telephone"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="Ej: 123456789" pattern="[0-9]{9}"
+                  ></label>
+                </div>
                 <label class="form__label message" for="message">Mensaje <span class="label__asterisk">*</span> </label>
-                <input class="form__input message" type="textarea" 
+                <textarea class="form__input message" 
                 id="message"
-                name="message"
+                name="message" rows="6"
                 placeholder="¿Qué necesitas?"
-                required
-                >
+                required></textarea>
                 <input class="form__input submit" type="submit" name="Enviar info" value="Enviar">
                 
         </section>
