@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cleopatra's Digital Empire - Contacto</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <!-- Línea de script es para que funcione el fontawesome no borrar-->
+    <script
+      src="https://kit.fontawesome.com/960132646f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/main.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="header__content">
+    <a href="../index.html" class="header__link"><h1 class="header__title">Cleopatra's Digital Empire</h1></a>
+  </div>
+  <nav class="nav__list">
+    <ul class="nav__list--content">
+      <li><a href="./index.html#team">EQUIPO</a></li>
+      <li><a href="./index.html#about-us">QUIENES SOMOS</a></li>
+      <li><a href="./contact.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+</header>
+    <main>
+        <section class="hero__contact"></section>
+        <section class="contact">
+            <h1 class="contact__title">CONTACTO</h1>
+            <P class="contact__text">Si tienes interés en contactar con alguna de nosotras, rellena el siguiente formulario y te contestaremos lo antes posible. Muchas gracias.</P>
+            <small class="contact__small">Todos los campos marcados con <span class="label__asterisk">*</span> son obligatorios.</small>
+        </section>
+
+        <section>
+            <form class="form" action="https://formspree.io/f/xnqyrjva"method="POST">
+                <label class="form__label firstName" for="firstName">Nombre completo <span class="label__asterisk">*</span> </label>
+                <input class="form__input firstName" type="text" 
+                id="firstName"
+                name="firstName"
+                placeholder="Nombre..."
+                required
+                >
+                <div class="form__flex">
+                  <label class="form__label label__email" for="email">Email <span class="label__asterisk">*</span>
+                  <input class="form__input email" type="email"
+                  id="email"
+                  name="email"
+                  value="nombre.apellidos@mail.com" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  ></label>
+                  <label class="form__label label__telephone" for="telephone">Teléfono
+                  <input class="form__input telephone" type="telephone"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="Ej: 123456789" pattern="[0-9]{9}"
+                  ></label>
+                </div>
+                <label class="form__label message" for="message">Mensaje <span class="label__asterisk">*</span> </label>
+                <textarea class="form__input message" 
+                id="message"
+                name="message" rows="6"
+                placeholder="¿Qué necesitas?"
+                required></textarea>
+                <input class="form__input submit" type="submit" name="Enviar info" value="Enviar">
+                
+        </section>
+    <footer>
+  <small><span class="group__name">Cleopatra's Digital Empire &copy;2023</span></small>
+  <nav class="footer__nav">
+    <ul class="footer__nav--list">
+      <li><a href="./index.html#team">EQUIPO</a></li>
+      <li><a href="./index.html#about-us">QUIÉNES SOMOS</a></li>
+      <li><a href="../contact.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+  <img
+    src="./assets/images/logo-adalab.png"
+    alt="logo adalab"
+    class="image_logo"
+  />
+</footer>
+    
+             </main>
+        
